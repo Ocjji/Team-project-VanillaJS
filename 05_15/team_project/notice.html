@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <!-- header -->
+            </div>
+        </header>
+        <!-- //header -->
+
+        <section id="subVisual" class="noticeVis">
+            <div class="inner">
+                <h2 class="notice-title">공지사항</h2>
+                <p class="notice-swicth-qna">
+                    <button class="goto-notice"><a href="#">공지사항</a></button>
+                    <button class="goto-qna"><a href="qna.html">자주 찾는 질문</a></button>
+                </p>
+            </div>
+        </section>
+        <!-- //section -->
+
+        <main id="container" class="support notice">
+            <section id="content">
+                <div class="inner">
+                    <div class="notice-title box">
+                        <h3>공지사항</h3>
+                        <div class="notice-search">
+                            <select name="" id="">
+                                <option value="0">전체</option>
+                                <option value="1">일반</option>
+                                <option value="2">안전정보</option>
+                                <option value="3">서비스</option>
+                                <option value="4">당첨자발표</option>
+                            </select>
+                            <input type="text" placeholder="검색어 입력">
+                            <button class="btn-notice-search">검색</button>
+                        </div>
+                    </div>
+                    <div class="notice-board">
+                        <ul class="notice-list">
+                            <li data-categorynum="0" class="notice-board-all on">
+                                <strong>전체</strong>
+                            </li>
+                            <li data-categorynum="1" class="notice-board-normal">
+                                <strong>일반</strong>
+                            </li>
+                            <li data-categorynum="2" class="notice-board-safety">
+                                <strong>안전정보</strong>
+                            </li>
+                            <li data-categorynum="3" class="notice-board-survice">
+                                <strong>서비스</strong>
+                            </li>
+                            <li data-categorynum="4" class="notice-board-event">
+                                <strong>당첨자발표</strong>
+                            </li>
+                        </ul>
+                        <div class="notice-board-content">
+                            <ul>
+                                <li>
+                                    <div class="on">
+                                        <table class="notice-table notice-table-all">
+                                            <caption>
+                                                <strong>공지사항 전체</strong>
+                                                <p>공지사항 전체</p>
+                                            </caption>
+                                            <colgroup>
+                                                <col class="w1">
+                                                <col class="w2">
+                                                <col class="w3">
+                                                <col class="w4">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>구분</th>
+                                                    <th>제목</th>
+                                                    <th>등록일</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <table class="notice-table notice-table-normal">
+                                            <caption>
+                                                <strong>공지사항 일반</strong>
+                                                <p>공지사항 일반</p>
+                                            </caption>
+                                            <colgroup>
+                                                <col class="w1">
+                                                <col class="w2">
+                                                <col class="w3">
+                                                <col class="w4">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>구분</th>
+                                                    <th>제목</th>
+                                                    <th>등록일</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <table class="notice-table notice-table-safety">
+                                            <caption>
+                                                <strong>공지사항 안전정보</strong>
+                                                <p>공지사항 안전정보</p>
+                                            </caption>
+                                            <colgroup>
+                                                <col class="w1">
+                                                <col class="w2">
+                                                <col class="w3">
+                                                <col class="w4">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>구분</th>
+                                                    <th>제목</th>
+                                                    <th>등록일</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <table class="notice-table notice-table-survice">
+                                            <caption>
+                                                <strong>공지사항 서비스</strong>
+                                                <p>공지사항 서비스</p>
+                                            </caption>
+                                            <colgroup>
+                                                <col class="w1">
+                                                <col class="w2">
+                                                <col class="w3">
+                                                <col class="w4">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>구분</th>
+                                                    <th>제목</th>
+                                                    <th>등록일</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <table class="notice-table notice-table-event">
+                                            <caption>
+                                                <strong>공지사항 당첨자발표</strong>
+                                                <p>공지사항 당첨자발표</p>
+                                            </caption>
+                                            <colgroup>
+                                                <col class="w1">
+                                                <col class="w2">
+                                                <col class="w3">
+                                                <col class="w4">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>구분</th>
+                                                    <th>제목</th>
+                                                    <th>등록일</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice-paging">
+                            <!-- <button><i class="notice-paging-prev xi-angle-left"></i></button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button><i class="notice-paging-prev xi-angle-right"></i></button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // content -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <!-- footer -->
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+    <!-- wrap 끝 -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
