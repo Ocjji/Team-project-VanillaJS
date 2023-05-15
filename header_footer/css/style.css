@@ -1,0 +1,904 @@
+#wrap {
+    margin-top: 146px;
+}
+
+/* header.html */
+#header {
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: -146px;
+    z-index: 30;
+    /* position: relative; */
+}
+
+#header .container {
+    margin: auto;
+    width: 1200px;
+    /* border: 1px solid #000; */
+}
+
+#header .container:nth-last-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .container:nth-last-of-type(2) .logo img {
+    width: 120px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+#header .top-menu-bg {
+    width: 100%;
+    border-bottom: 1px solid skyblue;
+}
+
+#header .container .top-menu {
+    height: 46px;
+    display: flex;
+    justify-content: right;
+    line-height: 46px;
+}
+
+#header .container .top-menu li {
+    margin-left: 20px;
+}
+
+#header .container .top-menu li a {
+    font-size: 14px;
+}
+
+.gnb {
+    height: 100px;
+    display: flex;
+    margin: auto;
+}
+
+.gnb ul {
+    width: 100%;
+    margin: auto;
+}
+
+.gnb li {
+    margin: auto 24px;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+
+.gnb li:hover::after {
+    border-bottom: 10px solid #1288AC;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.gnb li a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.more-menu {
+    display: flex;
+    margin: auto 0;
+    justify-content: right;
+}
+
+.more-menu li {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.more-menu li:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.more-menu li i {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    color: skyblue;
+}
+
+.more-menu li span {
+    /* display: block; */
+    text-align: center;
+    color: skyblue;
+    font-weight: 300;
+}
+
+.openDiv {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-top: 1px solid skyblue;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.openDiv.on {
+    height: 330px;
+    border-top: 2px solid #1288AC;
+}
+
+.openDivInner {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    height: 330px;
+    box-sizing: border-box;
+    background-image: url(../header/subbackground.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 500px 156px;
+    position: relative;
+}
+
+.openDivInner ul {
+    padding: 50px 0 0 60px;
+    width: 800px;
+    box-sizing: border-box;
+
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-menu.on {
+    display: block;
+
+}
+
+.sub-menu li {
+    width: 180px;
+    height: 35px;
+    border-bottom: 1px solid #D8F1F1;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.sub-menu li:hover {
+    border-bottom: 2px solid skyblue;
+}
+
+.sub-menu li:hover i {
+    color: skyblue;
+}
+
+.sub-menu a li {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.sub-menu li i {
+    width: 20px;
+    height: 20px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-60%);
+    color: #fff;
+}
+
+.openingHours,
+.openDivBanner {
+    width: 200px;
+    height: 330px;
+    box-sizing: border-box;
+}
+
+.openingHours {
+    background: url(../header/gnb_timeInfo_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    padding-top: 130px;
+    border-right: 1px solid #D8F1F1;
+}
+
+.openingHours .date {
+    font-size: 16px;
+    color: #888;
+    font-weight: 300;
+}
+
+.openingHours .date,
+.openingHours p,
+.openingHours strong {
+    line-height: 30px;
+}
+
+.openingHours p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+.openingHours strong {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.openDivBanner {
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    padding: 20px 0 0 30px;
+    background: rgba(135, 206, 235, 0.5);
+    overflow: hidden;
+}
+
+.openDivBanner strong {
+    font-size: 18px;
+}
+
+.openDivBanner em {
+    color: orangered;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.openDivBanner img {
+    width: 410px;
+    height: 440px;
+    transform: translate(-55%, -50%);
+    scale: 0.6;
+}
+
+/* promotion.html */
+.inner,
+.promotionVisualInner {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+/* promotion.html */
+.promotionBox,
+.promotionBoxEvent {
+    padding: 20px 0 40px 0;
+    display: none;
+}
+
+.promotionBox p,
+.promotionBoxEvent p,
+.cardLi h3 {
+    font-size: 34px;
+    font-weight: 700;
+    border-bottom: 3px solid skyblue;
+}
+
+.promotionBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.promotionBox li {
+    width: 240px;
+    padding: 10px 29px 10px 29px;
+}
+
+.promotionBox li a img {
+    width: 240px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.promotionBox li:hover a img {
+    scale: 1.02;
+}
+
+.promotionBox strong {
+    font-weight: 700;
+    display: block;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.promotionBox span {
+    font-size: 12px;
+    display: block;
+    padding-top: 6px;
+}
+
+/* event.html */
+.promotionVisual {
+    background-image: url(../event/cruz.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.promotionInner a button {
+    width: 300px;
+    color: white;
+    background-color: skyblue;
+    border-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    display: block;
+    margin: auto auto 40px auto;
+    cursor: pointer;
+}
+
+.promotionBox img,
+.promotionBoxEvent img {
+    width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+/* event3.html */
+.event3Bgimg {
+    background: url(../event/event3/bg_img_02.jpg);
+    background-position: 0, 0;
+    background-size: contain;
+}
+
+/* card */
+.cardBox {
+    display: none;
+
+}
+
+.cardLi h3 {
+    font-size: 34px;
+    margin: 0 0 27px;
+    padding: 20px 0 0 0;
+}
+
+.cardLi h3+ul li {
+    font-size: 14px;
+}
+
+.cardLi ul:nth-of-type(2) li {
+    padding: 30px 0;
+    border-top: 1px solid skyblue;
+}
+
+.cardList {
+    display: flex;
+    /* border: 1px solid #000; */
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cardListImg {
+    padding: 20px;
+}
+
+.cardListInfo {
+    /* border: 1px solid #000; */
+    width: 100%;
+    padding: 20px
+}
+
+.cardListInfo strong {
+    font-size: 20px;
+}
+
+.cardListInfo span {
+    font-size: 14px;
+}
+
+.cardListLogo {
+    height: 17px;
+    text-align: right;
+}
+
+.cardText {
+    width: 1200px;
+    padding: 20px;
+    line-height: 27px;
+    position: relative;
+    background-color: rgba(18, 136, 172, 0.1);
+    box-sizing: border-box;
+}
+
+.cardText p {
+    font-size: 14px;
+}
+
+.applyCardBtn {
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(-50%);
+    border-style: none;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.cardText:nth-child(2) .applyCardBtn:nth-child(1) {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.promotionVisual {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+.promotionVisualInner {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.promotionVisual .eventBtn,
+.promotionVisual .membershipBtn {
+    width: 600px;
+    height: 80px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: #D8F1F1;
+    color: #000;
+    font-weight: 700;
+}
+
+.promotionVisual .eventBtn.onBtn,
+.promotionVisual .membershipBtn.onBtn {
+    background: skyblue;
+    color: #FFF;
+}
+
+.promotionVisual .eventBtn {}
+
+.on {
+    display: block;
+}
+
+/* login.html */
+section {
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+/* 공통 */
+input {
+    border: 2px solid skyblue;
+}
+
+button,
+input[type=button] {
+    background-color: skyblue;
+    border: none;
+    vertical-align: bottom;
+}
+
+input:focus {
+    outline: none;
+    border-color: #15addb;
+}
+
+input::placeholder {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.loginInner input[type=text],
+.loginInner input[type=password],
+.loginInner input[type=email] {
+    width: 480px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.loginInner button {
+    color: #fff;
+    width: 480px;
+    height: 60px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginInner,
+.popupJoinInner,
+.popupFindIdPasswordInner {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.loginInner {
+    position: relative;
+    width: 480px;
+    padding: 50px 0;
+}
+
+.loginInner>a,
+.popupFindIdPasswordInner>a {
+    display: block;
+    width: auto;
+    margin: 0 0 50px 0;
+}
+
+
+.loginInner>a>img,
+.popupFindIdPasswordInner>a>img {
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 70px;
+}
+
+.loginInner p {
+    text-align: center;
+}
+
+.loginInner span {
+    display: block;
+    position: relative;
+    font-size: 14px;
+}
+
+.loginInner span:nth-of-type(1) {
+    display: inline;
+}
+
+.loginInner span:nth-of-type(2),
+.loginInner span:nth-of-type(3) {
+    padding-left: 10px;
+}
+
+.loginInner span:nth-of-type(2)::before,
+.loginInner span:nth-of-type(3)::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.loginInner span:nth-of-type(4) {
+    margin: 50px 0 10px;
+    text-align: center;
+}
+
+.findIdPassword {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.findIdPassword p {
+    position: relative;
+    padding: 0 20px;
+}
+
+.findIdPassword p::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.findIdPassword p:nth-of-type(1)::after {
+    display: none;
+}
+
+.loginIdTextBox {
+    margin-bottom: 5px;
+}
+
+.loginPasswordTextBox {
+    margin-bottom: 10px;
+}
+
+.saveInputId {
+    margin-right: 10px;
+    vertical-align: middle;
+    transform: translateY(-2px);
+}
+
+.loginBtn {
+    margin: 10px 0;
+}
+
+
+/* 소셜 로그인 */
+.socialLogin {
+    margin: 10px 0 50px 0;
+    display: flex;
+}
+
+.socialLogin a img {
+    width: 160px;
+    height: 40px;
+}
+
+/* findidpassword.html */
+.popupFindIdPasswordInner {
+    width: 580px;
+    padding: 50px;
+}
+
+.popupFindIdPasswordInner p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.popupFindIdPasswordInner span {
+    color: #888;
+    font-size: 16px;
+}
+
+.popupFindIdPasswordInner span {
+    display: block;
+    padding: 10px 0;
+}
+
+.popupFindIdPasswordInner input[type=text],
+.popupFindIdPasswordInner input[type=email] {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.emailSubmitBtn,
+.idSubmitBtn {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.findId {
+    margin-bottom: 50px;
+}
+
+/* join.html */
+.popupJoin {
+    display: block;
+}
+
+.popupJoinInner {
+    background: #fff;
+    width: 800px;
+    padding: 50px 0;
+}
+
+.popupJoinInner table {
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+}
+
+.popupJoinInner p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.popupJoinInner td {
+    font-size: 14px;
+
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.popupJoinInner td:nth-child(1) {
+    background-color: skyblue;
+    color: white;
+    font-weight: 600;
+}
+
+/* input type */
+.popupJoinInner input[type=text],
+.popupJoinInner input[type=password],
+.popupJoinInner input[type=email] {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.popupJoinInner input[type=text],
+.popupJoinInner input[type=password] {
+    width: 200px;
+}
+
+.popupJoinInner input[type=email] {
+    width: 150px;
+}
+
+.popupJoinInner input[type=text].phoneNumber {
+    width: 50px;
+}
+
+/* zipCode */
+.popupJoinInner input[type=button] {
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popupJoinInner .zipCode input[type=text] {
+    margin-top: 3px;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(1) {
+    width: 100px;
+    margin-top: 0;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(3),
+.popupJoinInner .zipCode input[type=text]:nth-of-type(4) {
+    width: 250px;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(5) {
+    width: 300px;
+}
+
+.popupJoinInner select {
+    border: 2px solid skyblue;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+
+.popupJoinInner option {
+    border: 2px solid skyblue;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+
+/* 버튼 */
+.duplicateCheckBtn {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popupJoinInner .joinBtn {
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 50px auto auto auto;
+    display: block;
+}
+
+/* footer.html */
+#footer {
+    width: 100%;
+    border-top: 1px solid #15addb;
+    margin: 0;
+}
+
+.footerInner {
+    width: 1200px;
+    margin: auto;
+    font-size: 12px;
+}
+
+.footerInner .info {
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.infoText {
+
+    /* border: 1px solid #ff0000; */
+}
+
+.infoText a {
+    font-size: 12px;
+}
+
+.infoText span {
+    position: relative;
+    padding: 0 8px 0 6px;
+}
+
+.infoText span::after {
+    content: "";
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.infoText span:nth-of-type(1),
+.infoText span:nth-of-type(7),
+.infoText span:nth-of-type(10),
+.infoText span:nth-of-type(13),
+.infoText span:nth-of-type(16),
+.infoText span:nth-of-type(17),
+.infoText span:nth-of-type(18),
+.infoText span:nth-of-type(19),
+.infoText span:nth-of-type(20) {
+    padding-left: 0;
+}
+
+.infoText span:nth-of-type(6)::after,
+.infoText span:nth-of-type(9)::after,
+.infoText span:nth-of-type(12)::after,
+.infoText span:nth-of-type(15)::after,
+.infoText span:nth-of-type(17)::after,
+.infoText span:nth-of-type(18)::after,
+.infoText span:nth-of-type(19)::after,
+.infoText span:nth-of-type(20)::after {
+    display: none;
+}
+
+.infoText span strong {
+    font-weight: 700;
+}
+
+.infoSns {
+    width: 300px;
+}
+
+.infoSnsItem {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoSns img {
+    width: 34px;
+    height: 34px;
+    margin: 0 5px;
+}

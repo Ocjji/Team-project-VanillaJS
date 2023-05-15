@@ -1,0 +1,84 @@
+#footer {
+    width: 100%;
+    border-top: 1px solid #15addb;
+    margin: 0;
+}
+
+.footerInner {
+    width: 1200px;
+    margin: auto;
+    font-size: 12px;
+}
+
+.footerInner .info {
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.infoText {
+
+    /* border: 1px solid #ff0000; */
+}
+
+.infoText a {
+    font-size: 12px;
+}
+
+.infoText span {
+    position: relative;
+    padding: 0 8px 0 6px;
+}
+
+.infoText span::after {
+    content: "";
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.infoText span:nth-of-type(1),
+.infoText span:nth-of-type(7),
+.infoText span:nth-of-type(10),
+.infoText span:nth-of-type(13),
+.infoText span:nth-of-type(16),
+.infoText span:nth-of-type(17),
+.infoText span:nth-of-type(18),
+.infoText span:nth-of-type(19),
+.infoText span:nth-of-type(20) {
+    padding-left: 0;
+}
+
+.infoText span:nth-of-type(6)::after,
+.infoText span:nth-of-type(9)::after,
+.infoText span:nth-of-type(12)::after,
+.infoText span:nth-of-type(15)::after,
+.infoText span:nth-of-type(17)::after,
+.infoText span:nth-of-type(18)::after,
+.infoText span:nth-of-type(19)::after,
+.infoText span:nth-of-type(20)::after {
+    display: none;
+}
+
+.infoText span strong {
+    font-weight: 700;
+}
+
+.infoSns {
+    width: 300px;
+}
+
+.infoSnsItem {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoSns img {
+    width: 34px;
+    height: 34px;
+    margin: 0 5px;
+}

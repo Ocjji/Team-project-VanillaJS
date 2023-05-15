@@ -1,0 +1,335 @@
+section {
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+/* 공통 */
+input {
+    border: 2px solid skyblue;
+}
+
+button,
+input[type=button] {
+    background-color: skyblue;
+    border: none;
+    vertical-align: bottom;
+}
+
+input:focus {
+    outline: none;
+    border-color: #15addb;
+}
+
+input::placeholder {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.loginInner input[type=text],
+.loginInner input[type=password],
+.loginInner input[type=email] {
+    width: 480px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.loginInner button {
+    color: #fff;
+    width: 480px;
+    height: 60px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginInner,
+.popupJoinInner,
+.popupFindIdPasswordInner {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.loginInner {
+    position: relative;
+    width: 480px;
+    padding: 50px 0;
+}
+
+.loginInner>a,
+.popupFindIdPasswordInner>a {
+    display: block;
+    width: auto;
+    margin: 0 0 50px 0;
+}
+
+.loginInner>a>img {
+    width: 120px;
+    height: 70px;
+}
+
+.loginInner>a>img,
+.popupFindIdPasswordInner>a>img {
+    display: block;
+    margin: auto;
+}
+
+.loginInner p {
+    text-align: center;
+}
+
+.loginInner span {
+    display: block;
+    position: relative;
+    font-size: 14px;
+}
+
+.loginInner span:nth-of-type(1) {
+    display: inline;
+}
+
+.loginInner span:nth-of-type(2),
+.loginInner span:nth-of-type(3) {
+    padding-left: 10px;
+}
+
+.loginInner span:nth-of-type(2)::before,
+.loginInner span:nth-of-type(3)::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.loginInner span:nth-of-type(4) {
+    margin: 50px 0 10px;
+    text-align: center;
+}
+
+.findIdPassword {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.findIdPassword p {
+    position: relative;
+    padding: 0 20px;
+}
+
+.findIdPassword p::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.findIdPassword p:nth-of-type(1)::after {
+    display: none;
+}
+
+.loginIdTextBox {
+    margin-bottom: 5px;
+}
+
+.loginPasswordTextBox {
+    margin-bottom: 10px;
+}
+
+.saveInputId {
+    margin-right: 10px;
+    vertical-align: middle;
+    transform: translateY(-2px);
+}
+
+.loginBtn {
+    margin: 10px 0;
+}
+
+
+/* 소셜 로그인 */
+.socialLogin {
+    margin: 10px 0 50px 0;
+    display: flex;
+}
+
+.socialLogin a img {
+    width: 160px;
+    height: 40px;
+}
+
+/* findidpassword.html */
+.popupFindIdPasswordInner {
+    width: 580px;
+    padding: 50px;
+}
+
+.popupFindIdPasswordInner p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.popupFindIdPasswordInner span {
+    color: #888;
+    font-size: 16px;
+}
+
+.popupFindIdPasswordInner span {
+    display: block;
+    padding: 10px 0;
+}
+
+.popupFindIdPasswordInner input[type=text],
+.popupFindIdPasswordInner input[type=email] {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.emailSubmitBtn,
+.idSubmitBtn {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.findId {
+    margin-bottom: 50px;
+}
+
+/* join.html */
+.popupJoin {
+    display: block;
+}
+
+.popupJoinInner {
+    background: #fff;
+    width: 800px;
+    padding: 50px 0;
+}
+
+.popupJoinInner table {
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+}
+
+.popupJoinInner p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.popupJoinInner td {
+    font-size: 14px;
+
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.popupJoinInner td:nth-child(1) {
+    background-color: skyblue;
+    color: white;
+    font-weight: 600;
+}
+
+/* input type */
+.popupJoinInner input[type=text],
+.popupJoinInner input[type=password],
+.popupJoinInner input[type=email] {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.popupJoinInner input[type=text],
+.popupJoinInner input[type=password] {
+    width: 200px;
+}
+
+.popupJoinInner input[type=email] {
+    width: 150px;
+}
+
+.popupJoinInner input[type=text].phoneNumber {
+    width: 50px;
+}
+
+/* zipCode */
+.popupJoinInner input[type=button] {
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popupJoinInner .zipCode input[type=text] {
+    margin-top: 3px;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(1) {
+    width: 100px;
+    margin-top: 0;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(3),
+.popupJoinInner .zipCode input[type=text]:nth-of-type(4) {
+    width: 250px;
+}
+
+.popupJoinInner .zipCode input[type=text]:nth-of-type(5) {
+    width: 300px;
+}
+
+.popupJoinInner select {
+    border: 2px solid skyblue;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+
+.popupJoinInner option {
+    border: 2px solid skyblue;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+
+/* 버튼 */
+.duplicateCheckBtn {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popupJoinInner .joinBtn {
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 50px auto auto auto;
+    display: block;
+}
