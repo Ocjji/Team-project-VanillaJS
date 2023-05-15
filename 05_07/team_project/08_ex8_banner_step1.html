@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        .con-box { width: 750px; margin:50px auto; position: relative;}
+        .con-box .banner {display: flex; transition: 0.4s;}
+        .con-box .banner li {}
+        .con-box .btn { position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; width: 50px; height: 50px; text-align: center; border: none; background: transparent; color:#fff }        
+        .con-box .btn i { font-size: 50px; }
+        .con-box .prev { left: 20px; }
+        .con-box .next { right: 20px; }
+    </style>   
+</head>
+<body>
+    <div class="con-box">
+        <ul class="banner">
+            <li>
+                <img src="images/img0.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/img1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/img2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/img3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/img4.jpg" alt="">
+            </li>
+        </ul>        
+        <p>
+            <button class="btn prev">
+                <i class="xi-angle-left-thin"></i>
+            </button>
+            <button class="btn next">
+                <i class="xi-angle-right-thin"></i>
+            </button>
+        </p>
+    </div>
+    <script>
+        ;(function(){
+            const get = (target) => {
+                return document.querySelector(target);
+            }
+            const getAll = (target) => {
+                return document.querySelectorAll(target);
+            }
+
+            let $banner = get('.banner');
+            let $bannerli = getAll('.banner li');
+            let $next = get('.next');
+            let $prev = get('.prev');
+            let current = 0, totalImage = $bannerli.length, size = 750;
+
+            //xxx.style.transform = translateX(750) banner 
+            $next.addEventListener('click', e => {             
+                if( current >= totalImage -1 ) return 
+                current ++;
+                banner(); 
+            }) 
+            $prev.addEventListener('click', e => {
+                if( current <= 0) return 
+                current--;
+                banner(); 
+            })
+            function banner(){
+                $banner.style.transform = `translateX(${-size * current}px)`;                
+            } 
+        })()
+    </script>
+</body>
+</html>

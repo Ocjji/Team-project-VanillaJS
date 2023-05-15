@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<style>
+    .popDateBox {}
+
+    .airportVis .inner .search .popDateBox {
+        background-color: white;
+        width: 740px;
+        height: 450px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .airportVis .inner .search .popDateBox>p {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    .airportVis .inner .search .popDateBox>p i {
+        font-size: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .airportVis .inner .search .popDateBox>p i:hover {
+        transform: rotate(90deg);
+        color: red;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate td {
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate .popDateS {
+        width: 350px;
+        height: auto;
+        margin-right: 40px;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate .popDateE {
+        width: 350px;
+        height: auto;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table {
+        text-align: center;
+
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table i {
+        font-size: 34px;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table thead tr:first-child td {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table thead tr:last-child td {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table tbody>tr>td>p {
+        height: 45px;
+        width: 45px;
+        border-radius: 45px;
+        transition-duration: 0.2s;
+        line-height: 45px;
+        margin: 2.5px;
+        display: block;
+        text-align: center;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table .pastDay {
+        color: lightgray;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table .today {
+        background: tan;
+        color: white;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table .futureDay {
+        background: white;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table .futureDay:hover {
+        background: lightgray;
+    }
+
+    .airportVis .inner .search .popDateBox .popDate table .futureDay.choiceDay,
+    .airportVis .inner .search .popDateBox .popDate table .today.choiceDay {
+        background: orange;
+        color: white;
+    }
+
+
+
+    .airportVis .inner .search .popPer p i:hover {
+        transform: rotate(90deg);
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="airportVis">
+        <div class="inner">
+            <div class="search">
+                <div class="popDateBox">
+                    <div class="popDatebox1">
+                    <p><i class="xi-close"></i></p>
+                    <div class="popDate">
+                        </p>
+                        <table class="popDateS">
+                            <thead>
+                                <tr>
+                                    <td><i class="xi-angle-left-min prev"></i></td>
+                                    <td colspan="6">
+                                        <span class="year"></span>년
+                                        <span class="month"></span>월
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>일</td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>수</td>
+                                    <td>목</td>
+                                    <td>금</td>
+                                    <td>토</td>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <table class="popDateE">
+                            <thead>
+                                <tr>
+                                    <td colspan="6">
+                                        <span class="year"></span>년
+                                        <span class="month"></span>월
+                                    </td>
+                                    <td><i class="xi-angle-right-min next"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>일</td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>수</td>
+                                    <td>목</td>
+                                    <td>금</td>
+                                    <td>토</td>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const get = (target) => {
+            return document.querySelector(target);
+        };
+        const getAll = (target) => {
+            return document.querySelectorAll(target);
+        };
+        let nowMonth = new Date();
+        let today = new Date();
+        today.setHours(0, 0, 0, 0);
+        let $prevBtn = get('.airportVis .inner .search .popDateBox .popDate .popDateS .prev')
+        let $nextBtn = get('.airportVis .inner .search .popDateBox .popDate .popDateE .next')
+
+        function calendar() {
+            let firstDateS = new Date(nowMonth.getFullYear(), nowMonth.getMonth(), 1);
+            let lastDateS = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, 0);
+            let firstDateE = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, 1);
+            let lastDateE = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 2, 0);
+
+            let $tbody_CalendarS = get('.airportVis .inner .search .popDateBox .popDate .popDateS>tbody');
+            let $yearS = get('.airportVis .inner .search .popDateBox .popDate .popDateS .year')
+            let $monthS = get('.airportVis .inner .search .popDateBox .popDate .popDateS .month')
+
+            let $tbody_CalendarE = get('.airportVis .inner .search .popDateBox .popDate .popDateE>tbody');
+            let $yearE = get('.airportVis .inner .search .popDateBox .popDate .popDateE .year')
+            let $monthE = get('.airportVis .inner .search .popDateBox .popDate .popDateE .month')
+
+            $yearS.innerHTML = nowMonth.getFullYear();
+            $monthS.innerHTML = nowMonth.getMonth() + 1;
+            $yearE.innerHTML = nowMonth.getFullYear();
+            $monthE.innerHTML = nowMonth.getMonth() + 2;
+
+            while ($tbody_CalendarS.rows.length > 0) {
+                $tbody_CalendarS.deleteRow($tbody_CalendarS.rows.length - 1);
+            }
+            while ($tbody_CalendarE.rows.length > 0) {
+                $tbody_CalendarE.deleteRow($tbody_CalendarE.rows.length - 1);
+            }
+            let nowRowS = $tbody_CalendarS.insertRow();
+            let nowRowE = $tbody_CalendarE.insertRow();
+
+            for (let i = 0; i < firstDateS.getDay(); i++) {
+                let nowColumn = nowRowS.insertCell();
+            }
+            for (let j = 0; j < firstDateE.getDay(); j++) {
+                let nowColumn = nowRowE.insertCell();
+            }
+
+            for (let nowDay = firstDateS; nowDay <= lastDateS; nowDay.setDate(nowDay.getDate() + 1)) {
+                let nowColumn = nowRowS.insertCell();
+
+                let newDIV = document.createElement('p');
+                newDIV.innerHTML = nowDay.getDate();
+                nowColumn.appendChild(newDIV);
+
+
+                if (nowDay.getDay() == 0) {
+                    nowColumn.style.color = 'red';
+                }
+                if (nowDay.getDay() == 6) {
+                    nowColumn.style.color = 'blue';
+                    nowRowS = $tbody_CalendarS.insertRow();
+                }
+                if (nowDay < today) {
+                    newDIV.className = 'pastDay';
+                } else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) {
+                    newDIV.className = "today";
+                    newDIV.addEventListener('click', e => {
+                        select(e.currentTarget, 'popDateS');
+                    })
+                } else {
+                    newDIV.className = 'futureDay';
+                    newDIV.addEventListener('click', e => {
+                        select(e.currentTarget, 'popDateS');
+                    })
+                }
+            }
+            for (let nowDay = firstDateE; nowDay <= lastDateE; nowDay.setDate(nowDay.getDate() + 1)) {
+                let nowColumn = nowRowE.insertCell();
+
+                let newDIV = document.createElement('p');
+                newDIV.innerHTML = nowDay.getDate();
+                nowColumn.appendChild(newDIV);
+                if (nowDay.getDay() == 0) {
+                    nowColumn.style.color = 'red';
+                }
+                if (nowDay.getDay() == 6) {
+                    nowColumn.style.color = 'blue';
+                    nowRowE = $tbody_CalendarE.insertRow();
+                }
+                if (nowDay < today) {
+                    newDIV.className = 'pastDay';
+                } else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) {
+                    newDIV.className = "today";
+                    newDIV.addEventListener('click', e => {
+                        select(e.currentTarget, 'popDateE');
+                    })
+                } else {
+                    newDIV.className = 'futureDay';
+                    newDIV.addEventListener('click', e => {
+                        select(e.currentTarget, 'popDateE');
+                    })
+                }
+            }
+        }
+
+
+
+
+        function select(day, calendarType) {
+    if (document.getElementsByClassName("choiceDay")[0]) {
+        document.getElementsByClassName("choiceDay")[0].classList.remove('choiceDay');
+    }
+    day.classList.add('choiceDay');
+
+    // 선택한 날짜의 연도, 월, 일을 추출
+    const selectedYear = nowMonth.getFullYear();
+    const selectedMonth = nowMonth.getMonth();
+    const selectedDay = parseInt(day.innerHTML);
+
+    // 선택한 날짜를 Date 객체로 추출
+    const selectedDateS = new Date(selectedYear, selectedMonth, selectedDay);
+    const selectedDateE = new Date(selectedYear, selectedMonth+1, selectedDay);
+
+    if (calendarType === 'popDateS') {
+        // popDateS에서 클릭한 경우
+        console.log('popDateS 날짜 선택:', selectedDateS);
+    } else if (calendarType === 'popDateE') {
+        // popDateE에서 클릭한 경우
+        console.log('popDateE 날짜 선택:', selectedDateE);
+    }
+}
+
+
+
+
+
+
+
+
+
+        $prevBtn.addEventListener('click', e => {
+            nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() - 1, nowMonth.getDate());
+            calendar();
+        })
+
+        $nextBtn.addEventListener('click', e => {
+            nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, nowMonth.getDate());
+            calendar();
+        })
+
+        calendar();
+
+
+
+    </script>
+</body>
+
+</html>
