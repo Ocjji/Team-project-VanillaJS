@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="shortcut icon" href="images/header/fabi/favicon.ico">
+    <link rel="manifest" href="images/header/fabi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/header/fabi/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>이젠제주투어 : Restaurant</title>
+</head>
+
+<body>
+    <p id="skipNav"><a href="index.html">본문바로가기</a></p>
+    <div id="wrap">
+        <header id="header">
+            <div class="top-menu-bg">
+                <div class="container">
+                    <ul class="top-menu">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/header/logo.png" alt=""></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="package.html">여행패키지</a></li>
+                    <li><a href="airport.html">특가 예약</a></li>
+                    <li><a href="active.html">관광지</a></li>
+                    <li><a href="promotion.html">프로모션</a></li>
+                    <li><a href="notice.html">고객센터</a></li>
+                </ul>
+                <div class="more-menu">
+                    <li><i class="xi-search"></i><span>검색</span></li>
+                    <li><i class="xi-group"></i><span>단체</span></li>
+                    <li><i class="xi-network-company"></i><span>기업체</span></li>
+                    <li><i class="xi-market"></i><span>상품몰</span></li>
+                </div>
+            </div>
+            <div class="openDiv">
+                <div class="openDivInner">
+                    <div class="openingHours">
+                        <span class="date">날짜칸</span>
+                        <p>고객센터</p>
+                        <strong>운영시간</strong><br><br>
+                        <strong>시간</strong>
+                    </div>
+                    <ul class="sub-menu">
+                        <a href="package.html">
+                            <li>여행패키지<i class="xi-angle-right"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="sub-menu">
+                        <a href="airport.html">
+                            <li>항공권<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="hotel.html">
+                            <li>호텔<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="rent.html">
+                            <li>렌터카<i class="xi-angle-right"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="sub-menu">
+                        <a href="active.html">
+                            <li>레저/잠수함<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="museum.html">
+                            <li>공원/전시/박물관<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="food.html">
+                            <li>Restaurant<i class="xi-angle-right"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="sub-menu">
+                        <a href="promotion.html">
+                            <li>Event<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="promotion.html">
+                            <li>제휴/멤버십<i class="xi-angle-right"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="sub-menu">
+                        <a href="notice.html">
+                            <li>공지사항<i class="xi-angle-right"></i></li>
+                        </a>
+                        <a href="qna.html">
+                            <li>자주 묻는 질문<i class="xi-angle-right"></i></li>
+                        </a>
+                    </ul>
+                    <a href="#">
+                        <div class="openDivBanner">
+                            <strong><em>앱 다운로드</em>로<br>더 스마트하고<br>편리하게!</strong>
+                            <img src="images/icon/169_generated.png" alt="googleplay">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <section id="visual" class="tourVis">
+            <ul class="tour_banner food_banner">
+                    <li><a href="promotion.html"></a></li>
+                    <li><a href="promotion.html"></a></li>
+                    <li><a href="promotion.html"></a></li>
+            </ul>
+            <ul class="tour_paging_bg">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="tour_paging">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <!-- //section -->
+        <main id="container" class="tour foodCon">
+            <section id="content">
+                <div class="tourCon tour_main">
+                    <div class="inner">
+                        <div class="tour_search">
+                            <form action="" method="get" autocomplete="off">
+                                <ul>
+                                    <li>
+                                        <label for="active_loc">지역</label>
+                                        <input type="text" id="active_loc" placeholder="제주시, 서귀포시, 동부, 서부">
+                                    </li>
+                                    <li>
+                                        <label for="active_name">음식점</label>
+                                        <input type="text" id="active_name" placeholder="검색키워드를 입력해주세요">
+                                    </li>
+                                    <li><i class="xi-search"></i><input type="submit" value="검색"></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <ul class="tour_info">
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_0.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>만조이천쌀밥 성산점</strong>
+                                    <em>바다의 보약 전복이 담긴 전복돌솥밥이 포함된 영양만점 밥상입니다.<br>전복돌솥밥 / 해물뚝배기 / 옥돔구이 / 고등어조림 / 갈치 조림</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#해물찜</span>
+                                        <span>#집밥</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>30,000 원</em>
+                                    <p>27,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_1.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>카페 에그인 선셋 제주 한림</strong>
+                                    <em>포르투갈 에그타르트 전문점<br>반죽부터 굽기까지 모두 직접! 노을지는 제주 바다를 보며 에그타르트 한 입~</btr></em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#카페</span>
+                                        <span>#디저트</span>
+                                        <span>#에그타르트</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>10,000 원</em>
+                                    <p>9,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_2.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>돔베보이 중문점</strong>
+                                    <em>저렴한 수입 냉동육이나 앞다리살이 아닌 제주산 삼겹살만으로 요리합니다.<br>반반 돔베보쌈 / 수비드 그릴 돔베보쌈 / 편백 수비드 돔베세트</em>
+                                    <div class="txt_span">
+                                        <span>#제주맛집</span>
+                                        <span>#돔베고기</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>17,000 원</em>
+                                    <p>15,900 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_3.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>생돈우리</strong>
+                                    <em>육즙이 가득한 숙성 제주 흑돼지! 사장님이 직접 구매부터 숙성까지 책임지는 진정한 제주산 흑돼지만을 사용합니다. 30시간 저온숙성 및 참숯으로 초벌 라여 육즙이 살아있습니다. <br>30숙성 제주백돼지 근고기 / 오삽겹</em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#흑돼지</span>
+                                        <span>#제주맛집</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>38,000 원</em>
+                                    <p>24,900 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_4.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>봄그리고가을리조트 조식</strong>
+                                    <em>우도와 성산일출봉이 보이는 아름다운 해안 도로 앞에서 즐기는 아침</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#조식뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>12,000 원</em>
+                                    <p>11,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_5.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>제주연동흑돼지숯불구이_원조 제원 깡통</strong>
+                                    <em>제주에 왔으면 흑돼지 먹고 가야죠!<br>제주산 흑돼지 한근 / 제주산 근고기</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#잠수함</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>44,000 원</em>
+                                    <p>39,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_6.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>맛의 고수</strong>
+                                    <em>신선한 재료와 정성가득한 음식! 아름다운 애월 바다가 보이는 맛의 고수에서 건강하고 든든한 한 끼<br>전복 흑돼지 돈가스 / 흑돼지 해물라면 / 제주 품은 해물 떡볶이</em>
+                                    <div class="txt_span">
+                                        <span>#애월맛집</span>
+                                        <span>#해물탕</span>
+                                        <span>#해물라면</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>12,000 원</em>
+                                    <p>9,900 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_7.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>매종글래드 삼다정 런치뷔페</strong>
+                                    <em>제주의 자연이 주는 싱그러운 재료를 특 1급 호텔 셰프의 정성어린 손길로 라이브 키친에서 요리하는 프리미엄 뷔페</em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#런치뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>35,000 원</em>
+                                    <p>31,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_8.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>매종글래드 삼다정 디너뷔페</strong>
+                                    <em>제주의 자연이 주는 싱그러운 재료를 특 1급 호텔 셰프의 정성어린 손길로 라이브 키친에서 요리하는 프리미엄 뷔페</em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#디너뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>60,000 원</em>
+                                    <p>54,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_9.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>제주신화월드 스카이온파이브 다이닝뷔페</strong>
+                                    <em>이국적인 뷰와 함께하는 프리미엄 뷔페 레스토랑</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#다이닝뷔페</span>
+                                        <span>#런치</span>
+                                        <span>#디너</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>35,000 원</em>
+                                    <p>31,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>                            
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_10.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>그랜드조선제주 아리아 디너</strong>
+                                    <em>창밖으로 펼펴지는 오름정원의 아름다운 전망과 함께 조선호텔의 품격을 담은 130여가지의 다양한 메뉴를 제공하는 그랜드 조선 제주 뷔페 아리아</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#디너뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>73,000 원</em>
+                                    <p>65,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_11.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>그랜드조선제주 아리아 런치</strong>
+                                    <em>창밖으로 펼펴지는 오름정원의 아름다운 전망과 함께 조선호텔의 품격을 담은 130여가지의 다양한 메뉴를 제공하는 그랜드 조선 제주 뷔페 아리아</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#런치뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>47,000 원</em>
+                                    <p>42,500 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_12.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>해비치호텔앤드리조트 섬모라 디너뷔페</strong>
+                                    <em>편안하면서도 모던한 자연 친화적 실내 장식과 통유리창을 통해 보이는 반짝이는 제주 바다를 가까이에서 즐길 수 있는 뷔페 레스토랑</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#디너뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>65,000 원</em>
+                                    <p>59,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_13.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>라마다프라자제주호텔 더블루 뷔페</strong>
+                                    <em>푸른 제주 바다 위, 크루즈 선상 레스토랑에 있는 등한 공간에서 즐기는 뷔페 레스토랑</em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#호텔뷔페</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>35,000 원</em>
+                                    <p>31,900 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_14.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>델문도 김녕점</strong>
+                                    <em>델문도 김녕점은 일출과 일몰이 함께하고, 산과 바다가 보이는 아름다운 풍경과 바람속에 자리하고 있습니다.</em>
+                                    <div class="txt_span">
+                                        <span>#서귀포시</span>
+                                        <span>#카페</span>
+                                        <span>#디저트</span>
+                                        <span>#문도샌드</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>10,000 원</em>
+                                    <p>9,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="images/tour/tour_food/food_15.jpg" alt="">
+                                <div class="tour_txt">
+                                    <strong>명월국민학교</strong>
+                                    <em>1955년부터 1993년까지 40녀 년 가까이 명월리 아이들의 배움터이자 놀이터였던 명월국민학교</em>
+                                    <div class="txt_span">
+                                        <span>#제주시</span>
+                                        <span>#카페</span>
+                                        <span>#교복</span>
+                                        <span>#갤러리</span>
+                                    </div>
+                                </div>
+                                <div class="tour_price">
+                                    <em>10,000 원</em>
+                                    <p>9,000 원</p>
+                                    <strong>구매하기</strong>
+                                    <strong>구매하기</strong>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <button class="more">MORE</button>
+                    </div>
+                </div>
+                <!-- //con1 -->
+            </section>
+        </main>
+        <!-- //main -->
+        <aside class="tour_bottom">
+            <div class="inner">
+                <h2>단체여행 패키지 할인</h2>
+                <ul>
+                    
+                    <li><a href="#">
+                        <img src="images/tour/tour_banner/bnn_1.jpg" alt="">
+                        <h3>우도팔경투어</h3>
+                        <p>성인 1일 기준</p>
+                        <div>
+                            <span>80,000</span><strong>45,000</strong>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="images/tour/tour_banner/bnn_2.jpg" alt="">
+                        <h3>우도잠수함투어</h3>
+                        <p>성인 1일 기준</p>
+                        <div>
+                            <span>100,000</span><strong>45,000</strong>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="images/tour/tour_banner/bnn_3.jpg" alt="">
+                        <h3>맨드라미 산호초 군락지</h3>
+                        <p>성인 1일 기준</p>
+                        <div>
+                            <span>100,000</span><strong>50,000</strong>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="images/tour/tour_banner/bnn_0.jpg" alt="">
+                        <h3>우리가족 행복충전</h3>
+                        <p>성인 1일 기준</p>
+                        <div>
+                            <span>70,000</span><strong>20,000</strong>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <footer id="footer">
+            <div class="footerInner">
+                <div class="info">
+                    <div class="infoText">
+                        <span><a href="#">회사소개</a></span>
+                        <span><a href="#">이용약관</a></span>
+                        <span><a href="#">여행약관개인정보처리방침</a></span>
+                        <span><a href="#">해외여행자보험</a></span>
+                        <span><a href="#">마케팅제휴</a></span>
+                        <span><a href="#">공식인증예약센터 검색</a></span><br>
+                        <span><strong>(주)이젠제주투어</strong></span>
+                        <span><strong>대표</strong> 김하진</span>
+                        <span><strong>주소</strong> (00000) 인천광역시 부평구 청천동 0길 00</span><br>
+                        <span><strong>사업자등록번호</strong> 102-81-00000</span>
+                        <span><strong>통신판매업신고번호</strong> 부평01-1806호</span>
+                        <span><strong>관광사업자 등록번호</strong> 제1993-000006호</span><br>
+                        <span><strong>개인정보 보호책임자</strong> 전준형</span>
+                        <span><strong>가입팩스</strong> 02-734-0392</span>
+                        <span><strong>이메일</strong> ezenacd@jeju.com</span><br>
+                        <span><strong>고객센터</strong> 1577-0000</span>
+                        <span><strong>항공권문의</strong> 1899-0000</span><br><br>
+                        <span><strong>※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</strong></span><br><br>
+                        <span><strong>※ 이젠제주투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해
+                                책임을 지지
+                                않습니다.</strong></span><br><br>
+                        <span><strong>COPYRIGHTⓒ EZENJEJUTOUR SERVICE INC. ALL RIGHTS RESERVED</strong></span>
+                    </div>
+                    <div class="infoSns">
+                        <div class="infoSnsItem">
+                            <a href="#"><img src="images/footer/icon/instagram.png" alt=""></a>
+                            <a href="#"><img src="images/footer/icon/facebook.png" alt=""></a>
+                            <a href="#"><img src="images/footer/icon/naverblog.png" alt=""></a>
+                            <a href="#"><img src="images/footer/icon/youtube.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
