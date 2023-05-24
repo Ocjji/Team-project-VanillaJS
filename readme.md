@@ -2,7 +2,7 @@
 
 ## 팀원
 
-| FE             | 이름   | Github                              | 작업사항                                                                                                                                                                                                                                                                                     |
+|              | 이름   | Github                              | 작업사항                                                                                                                                                                                                                                                                                     |
 | :------------- | :----- | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | FE             | 김하진 | [@](http://github.com/kanghooo)        | [여행패키지](http://becoding.dothome.co.kr/tp10/package.html)<br />[레저/잠수함](http://becoding.dothome.co.kr/tp10/active.html)<br />[공원/전시/박물관](http://becoding.dothome.co.kr/tp10/museum.html)<br />[Restaurant](http://becoding.dothome.co.kr/tp10/food.html)                                 |
 | FE             | 김형종 | [@Ocjji](https://github.com/Ocjji)     | [메인](http://becoding.dothome.co.kr/tp10/index.html)<br />[공지사항](http://becoding.dothome.co.kr/tp10/notice.html)<br />[자주 묻는 질문](http://becoding.dothome.co.kr/tp10/qna.html)                                                                                                              |
