@@ -2,14 +2,15 @@
 
 ## 팀원
 
-|              | 이름   | Github                              | 작업사항                                                                                                                                                                                                                                                                                     |
-| :------------- | :----- | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FE             | 김하진 | [@](http://github.com/kanghooo)        | [여행패키지](http://becoding.dothome.co.kr/tp10/package.html)<br />[레저/잠수함](http://becoding.dothome.co.kr/tp10/active.html)<br />[공원/전시/박물관](http://becoding.dothome.co.kr/tp10/museum.html)<br />[Restaurant](http://becoding.dothome.co.kr/tp10/food.html)                                 |
-| FE             | 김형종 | [@Ocjji](https://github.com/Ocjji)     | [메인](http://becoding.dothome.co.kr/tp10/index.html)<br />[공지사항](http://becoding.dothome.co.kr/tp10/notice.html)<br />[자주 묻는 질문](http://becoding.dothome.co.kr/tp10/qna.html)                                                                                                              |
-| FE<br />design | 이명관 | [@](http://github.com/kanghooo)        | [이벤트](http://becoding.dothome.co.kr/tp10/promotion.htmlhttp://becoding.dothome.co.kr/tp10/promotion.html)<br />[제휴/멤버십](http://becoding.dothome.co.kr/tp10/promotion.html)<br />[로그인](http://becoding.dothome.co.kr/tp10/login.html)/[회원가입](http://becoding.dothome.co.kr/tp10/join.html) |
-| FE             | 이상연 | [@yeonhub](https://github.com/yeonhub) | [항공권](http://becoding.dothome.co.kr/tp10/airport.html)<br />[호텔](http://becoding.dothome.co.kr/tp10/hotel.html)<br />[렌터카](http://becoding.dothome.co.kr/tp10/rent.html)                                                                                                                      |
+|              | 이름   | Github                                  | 작업사항                                                                                                                                                                                                                                                                                     |
+| :----------- | :----- | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FE           | 김하진 | [@HajinKimm](https://github.com/HajinKimm) | [여행패키지](http://becoding.dothome.co.kr/tp10/package.html)<br />[레저/잠수함](http://becoding.dothome.co.kr/tp10/active.html)<br />[공원/전시/박물관](http://becoding.dothome.co.kr/tp10/museum.html)<br />[Restaurant](http://becoding.dothome.co.kr/tp10/food.html)                                 |
+| FE           | 김형종 | [@Ocjji](https://github.com/Ocjji)         | [메인](http://becoding.dothome.co.kr/tp10/index.html)<br />[공지사항](http://becoding.dothome.co.kr/tp10/notice.html)<br />[자주 묻는 질문](http://becoding.dothome.co.kr/tp10/qna.html)                                                                                                              |
+| FE / design | 이명관 | [@audrhks29](https://github.com/audrhks29) | [이벤트](http://becoding.dothome.co.kr/tp10/promotion.htmlhttp://becoding.dothome.co.kr/tp10/promotion.html)<br />[제휴/멤버십](http://becoding.dothome.co.kr/tp10/promotion.html)<br />[로그인](http://becoding.dothome.co.kr/tp10/login.html)/[회원가입](http://becoding.dothome.co.kr/tp10/join.html) |
+| FE           | 이상연 | [@yeonhub](https://github.com/yeonhub)     | [항공권](http://becoding.dothome.co.kr/tp10/airport.html)<br />[호텔](http://becoding.dothome.co.kr/tp10/hotel.html)<br />[렌터카](http://becoding.dothome.co.kr/tp10/rent.html)                                                                                                                      |
 
 # 프로젝트 사이트
+
 <a href="http://becoding.dothome.co.kr/tp10/index.html" target="_blank"><img src="./readme-images/Ezen%20Jeju%20Tour.png"></a>
 <br>
 <br>
@@ -37,12 +38,13 @@
 5. javascript(vanilla script)
 
 <img src="./readme-images/list.png" width="100%">
+<a href="https://www.figma.com/file/TrxoxSOF1tib1o89FM2bUB/wireframe?type=design&node-id=168%3A3073&t=hXokD1sTXYyjV8zc-1" target="_blank"><img src="./readme-images/wireframe.png" width="100%"></a>
 
 # 프로젝트 기능 구현
 
 ## 0) header
 
-* mainmenu 호버 시 submenu 출력
+* mainmenu hover 시 submenu 출력
 * new date로 현재 날짜, 시간별 운영시간 출력
 * scroll 이동 시 fixed
 <img src="./readme-images/header.gif" width="100%">
