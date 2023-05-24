@@ -11,7 +11,7 @@
 
 # 프로젝트 사이트
 
-[프로젝트 바로가기](http://becoding.dothome.co.kr/tp10/index.html)
+[프로젝트 바로가기](http://becoding.dothome.co.kr/tp10/index.html){: target="_blank"}
 
 # 프로젝트 참고 사이트
 
