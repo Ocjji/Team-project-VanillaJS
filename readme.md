@@ -11,14 +11,14 @@
 
 # 프로젝트 사이트
 
-[프로젝트 바로가기](http://becoding.dothome.co.kr/tp10/index.html){: target="_blank"}
+1. <a href="http://becoding.dothome.co.kr/tp10/index.html" target="_blank">프로젝트 바로가기</a>
 
 # 프로젝트 참고 사이트
 
-1. [제주닷컴](https://www.jeju.com)
-2. [하나투어](https://www.hanatour.com)
-3. [aa]()
-4. [aa]()
+1. <a href="https://www.jeju.com/" target="_blank">제주닷컴</a>
+2. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
+3. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
+4. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
 
 # 프로젝트 기술 스택
 
@@ -37,13 +37,12 @@
 # 프로젝트 기능 구현
 
 ## 0) header
-
 * mainmenu 호버 시 submenu 출력
 * new date로 현재 날짜, 시간별 운영시간 출력
 * scroll 이동 시 fixed
+<img src="./readme-images/header.gif" width="100%">
 
 ## 1) 메인
-
 * visual rolling
 * visual button 구현
 * search box (패키지, 항공, 호텔)
@@ -52,14 +51,12 @@
 <img src="./readme-images/main.gif" width="100%">
 
 ## 2) 여행 패키지
-
 * search box 구현 (popup, select/option)
 * list 클릭 시 해당 list 출력
 * list more button 구현
 <img src="./readme-images/pac.gif" width="100%">
 
 ## 3) 특가 예약
-
 * visual rolling
 * visual button 구현
 * search box (왕복, 편도)
@@ -72,14 +69,12 @@
 <img src="./readme-images/rent.gif" width="100%">
 
 ## 4) 관광지
-
 * visual rolling
 * visual page button 구현
 * content more button 구현
 <img src="./readme-images/act.gif" width="100%">
 
 ## 5) 프로모션
-
 * 이벤트-제휴/멤버십 웹앱 형식 이동
 * 이벤트 content 클릭 시 상세 페이지 이동
 <img src="./readme-images/event.gif" width="100%">
@@ -88,7 +83,7 @@
 
 * 공지사항 type 클릭 시 해당 내용 출력
 * page 번호 구현
-* 자주 묻는 질문 제목 클릭 시 답변 출력
+* 자주 묻는 질문 제목 클릭 시 답변 출력 
 <img src="./readme-images/notice.gif" width="100%">
 
 ## 7) 로그인
