@@ -40,8 +40,8 @@
 4. HTML / CSS
 5. javascript(vanilla script)
 
-## Wireframe
 <img src="./readme-images/list.png" width="100%">
+## Wireframe
 <a href="https://www.figma.com/file/TrxoxSOF1tib1o89FM2bUB/wireframe?type=design&node-id=168%3A3073&t=hXokD1sTXYyjV8zc-1" target="_blank"><img src="./readme-images/wireframe.png" width="100%"></a>
 
 # 프로젝트 기능 구현
