@@ -20,8 +20,11 @@
 
 1. <a href="https://www.jeju.com/" target="_blank">제주닷컴</a>
 2. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
-3. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
-4. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
+3. <a href="http://jejumania.com/" target="_blank">제주매니아</a>
+4. <a href="https://www.tamnao.com/" target="_blank">탐나오</a>
+5. <a href="http://www.jejutourbank.co.kr" target="_blank">제주투어뱅크</a>
+
+
 
 # 프로젝트 기술 스택
 
