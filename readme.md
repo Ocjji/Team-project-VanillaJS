@@ -49,14 +49,14 @@
 * search box (패키지, 항공, 호텔)
 * search box 구현 (popup)
 * content 변경 구현
-  `<img src="./readme-images/main.gif" width="100%">`
+<img src="./readme-images/main.gif" width="100%">
 
 ## 2) 여행 패키지
 
 * search box 구현 (popup, select/option)
 * list 클릭 시 해당 list 출력
 * list more button 구현
-  `<img src="./readme-images/pac.gif" width="100%">`
+<img src="./readme-images/pac.gif" width="100%">
 
 ## 3) 특가 예약
 
@@ -67,29 +67,29 @@
 * content 변경 구현
 * rent search box 시간 select/option 구현
 * rent type 선택 시 해당 type 출력
-  `<img src="./readme-images/air.gif" width="100%">`
-  `<img src="./readme-images/hotel.gif" width="100%">`
-  `<img src="./readme-images/rent.gif" width="100%">`
+<img src="./readme-images/air.gif" width="100%">
+<img src="./readme-images/hotel.gif" width="100%">
+<img src="./readme-images/rent.gif" width="100%">
 
 ## 4) 관광지
 
 * visual rolling
 * visual page button 구현
 * content more button 구현
-  `<img src="./readme-images/act.gif" width="100%">`
+<img src="./readme-images/act.gif" width="100%">
 
 ## 5) 프로모션
 
 * 이벤트-제휴/멤버십 웹앱 형식 이동
 * 이벤트 content 클릭 시 상세 페이지 이동
-  `<img src="./readme-images/event.gif" width="100%">`
+<img src="./readme-images/event.gif" width="100%">
 
 ## 6) 고객센터
 
 * 공지사항 type 클릭 시 해당 내용 출력
 * page 번호 구현
 * 자주 묻는 질문 제목 클릭 시 답변 출력
-  `<img src="./readme-images/notice.gif" width="100%">`
+<img src="./readme-images/notice.gif" width="100%">
 
 ## 7) 로그인
 <img src="./readme-images/login.png" width="100%">
