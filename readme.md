@@ -76,7 +76,7 @@
 * visual rolling
 * visual page button 구현
 * content more button 구현
-<img src="./readme-images/act" width="600px">
+<img src="./readme-images/act.gif" width="600px">
 
 ## 5) 프로모션
 
