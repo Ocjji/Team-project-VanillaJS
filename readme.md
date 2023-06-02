@@ -11,10 +11,10 @@
 
 # 프로젝트 사이트
 
-<a href="http://becoding.dothome.co.kr/tp10/index.html" target="_blank"><img src="./readme-images/Ezen%20Jeju%20Tour.png"></a>
+<a href="https://yeonhub.github.io/Team-project-VanillaJS/" target="_blank"><img src="./readme-images/Ezen%20Jeju%20Tour.png"></a>
 <br>
 <br>
-<a href="http://becoding.dothome.co.kr/tp10/index.html" target="_blank"><img src="./readme-images/logo.png" width="200px"></a>
+<a href="https://yeonhub.github.io/Team-project-VanillaJS/" target="_blank"><img src="./readme-images/logo.png" width="200px"></a>
 
 # 프로젝트 참고 사이트
 
