@@ -6,7 +6,7 @@
 | :----------- | :----- | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | FE           | 김하진 | [@HajinKimm](https://github.com/HajinKimm) | [여행패키지](http://becoding.dothome.co.kr/tp10/package.html)<br />[레저/잠수함](http://becoding.dothome.co.kr/tp10/active.html)<br />[공원/전시/박물관](http://becoding.dothome.co.kr/tp10/museum.html)<br />[Restaurant](http://becoding.dothome.co.kr/tp10/food.html)                                 |
 | FE           | 김형종 | [@Ocjji](https://github.com/Ocjji)         | [메인](http://becoding.dothome.co.kr/tp10/index.html)<br />[공지사항](http://becoding.dothome.co.kr/tp10/notice.html)<br />[자주 묻는 질문](http://becoding.dothome.co.kr/tp10/qna.html)                                                                                                              |
-| FE / design | 이명관 | [@audrhks29](https://github.com/audrhks29) | [이벤트](http://becoding.dothome.co.kr/tp10/promotion.htmlhttp://becoding.dothome.co.kr/tp10/promotion.html)<br />[제휴/멤버십](http://becoding.dothome.co.kr/tp10/promotion.html)<br />[로그인](http://becoding.dothome.co.kr/tp10/login.html)/[회원가입](http://becoding.dothome.co.kr/tp10/join.html) |
+| FE / design | 이명관 | [@audrhks29](https://github.com/audrhks29) | [이벤트](http://becoding.dothome.co.kr/tp10/promotion.html)<br />[제휴/멤버십](http://becoding.dothome.co.kr/tp10/promotion.html)<br />[로그인](http://becoding.dothome.co.kr/tp10/login.html)/[회원가입](http://becoding.dothome.co.kr/tp10/join.html) |
 | FE           | 이상연 | [@yeonhub](https://github.com/yeonhub)     | [항공권](http://becoding.dothome.co.kr/tp10/airport.html)<br />[호텔](http://becoding.dothome.co.kr/tp10/hotel.html)<br />[렌터카](http://becoding.dothome.co.kr/tp10/rent.html)                                                                                                                      |
 
 # 프로젝트 사이트
@@ -20,8 +20,11 @@
 
 1. <a href="https://www.jeju.com/" target="_blank">제주닷컴</a>
 2. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
-3. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
-4. <a href="https://www.hanatour.com/" target="_blank">하나투어</a>
+3. <a href="http://jejumania.com/" target="_blank">제주매니아</a>
+4. <a href="https://www.tamnao.com/" target="_blank">탐나오</a>
+5. <a href="http://www.jejutourbank.co.kr" target="_blank">제주투어뱅크</a>
+
+
 
 # 프로젝트 기술 스택
 
@@ -38,6 +41,8 @@
 5. javascript(vanilla script)
 
 <img src="./readme-images/list.png" width="100%">
+
+## Wireframe
 <a href="https://www.figma.com/file/TrxoxSOF1tib1o89FM2bUB/wireframe?type=design&node-id=168%3A3073&t=hXokD1sTXYyjV8zc-1" target="_blank"><img src="./readme-images/wireframe.png" width="100%"></a>
 
 # 프로젝트 기능 구현
