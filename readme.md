@@ -11,10 +11,10 @@
 
 # 프로젝트 사이트
 
-<a href="https://yeonhub.github.io/Team-project-VanillaJS/" target="_blank"><img src="./readme-images/Ezen%20Jeju%20Tour.png"></a>
+<a href="https://yeonhub.github.io/TP-EZtour_vanillaJS/" target="_blank"><img src="./readme-images/Ezen%20Jeju%20Tour.png"></a>
 <br>
 <br>
-<a href="https://yeonhub.github.io/Team-project-VanillaJS/" target="_blank"><img src="./readme-images/logo.png" width="200px"></a>
+<a href="https://yeonhub.github.io/TP-EZtour_vanillaJS/" target="_blank"><img src="./readme-images/logo.png" width="200px"></a>
 
 # 프로젝트 참고 사이트
 
