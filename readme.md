@@ -76,9 +76,10 @@
 * content 변경 구현
 * rent search box 시간 select/option 구현
 * rent type 선택 시 해당 type 출력
-  <img src="./readme-images/air.gif" width="100%">
-  <img src="./readme-images/hotel.gif" width="100%">
-  <img src="./readme-images/rent.gif" width="100%">
+
+<img src="./readme-images/air.gif" width="100%">
+<img src="./readme-images/hotel.gif" width="100%">
+<img src="./readme-images/rent.gif" width="100%">
 
 ## 4) 관광지
 
